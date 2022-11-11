@@ -1,0 +1,28 @@
+*{
+    border: 1px solid black;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    background-color: whitesmoke;
+}
+
+#header{
+    color: #ff6663;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    min-width: 98vw;
+}
