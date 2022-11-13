@@ -4,19 +4,40 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="main.css">
-        <script type="module" src="main.js" async defer></script>
-    </head>
-    <body>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="main.css" />
+    <script type="module" src="main.js" async defer></script>
+  </head>
+  <body>
+    <div id="container">
+      <nav id="top">
+        <div id="logo">
+          <img src="./modules/Images/Logo.png" alt="adam carlsson logo" />
+        </div>
         <header id="header"><h1>Rock, Paper, Scissors: Adventure!</h1></header>
-        <div id="container">Stuff</div>
-        
-        
-    </body>
+        <div id="rules">
+          <h1>Rules</h1>
+        </div>
+      </nav>
+      <div id="middle">
+        <div id="playercontainer">
+          <div id="player"></div>
+          <div id="rpsbtns"></div>
+        </div>
+
+        <div id="eventcontainer">
+          <img id="painting" src="./modules/Images/NatureWorld.png" alt="van gogh style painting of nature" />
+        </div>
+        <div id="enemycontainer">
+          <div id="enemy"></div>
+          <div id="rpsenemychance"></div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
