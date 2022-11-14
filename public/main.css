@@ -9,9 +9,10 @@ html{
 body{
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     min-height: 100vh;
     background-color: whitesmoke;
+    overflow: hidden;
 }
 
 
@@ -20,27 +21,35 @@ body{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    min-height: 100%;
-    min-width: 100%;
+    min-height: 100vh;
+    min-width: 100vw;
     flex:1;
     flex-direction: column;
-    gap: 8vh;
+    gap: 2vh;
+    
 }
 
 #top{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    min-width: 90%;
+    min-width: 90%;  
 }
+
+
 #logo{
     flex:1;
+   
 }
 #header{
+    display: flex;
+    justify-content: center;
     color: #ff6663;
     flex:1;
 }
 #rules{
+    display: flex;
+    justify-content: center;
     flex:1;
 }
 
@@ -50,7 +59,7 @@ body{
     
     justify-content: center;
     align-items: center;
-    min-height: 300px;
+    min-height: 400px;
     min-width: 10%;
 }
 
@@ -59,7 +68,7 @@ body{
     flex: 1 auto;
     justify-content: center;
     align-items: center;
-    min-height: 300px;
+    min-height: 400px;
     min-width: 10%;
 }
 
@@ -69,7 +78,7 @@ body{
     flex-basis: auto;
     justify-content: center;
     align-items: center;
-    max-height: 80%;
+    max-height: 90%;
 }
 
 #middle{
@@ -85,5 +94,21 @@ body{
 #painting{
     min-width: 100%;
     max-height: 600px;
+    z-index: 3;
 }
 
+@media screen and (max-width: 1000px) {
+    #top{
+        display: none;
+    }
+    #painting{
+       min-height: 100vh;
+       min-width: 100vw;
+       z-index: -1;
+    }
+    #eventcontainer{
+        max-width: 50vw;
+        max-height: 50vh;
+        overflow: visible;
+    }
+}
