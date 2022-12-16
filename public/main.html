@@ -14,32 +14,40 @@
     <script type="module" src="main.js" async defer></script>
   </head>
   <body>
+    <div id="start">Click anywhere to start a rock paper scissors game against the computer</div>
     <div id="container">
       <nav id="top">
         <div id="logo">
           <img src="./modules/Images/Logo.png" alt="adam carlsson logo" />
         </div>
-        <header id="header"><h1>Rock, Paper, Scissors: Adventure!</h1></header>
+        <header id="header"><h1>Rock, Paper, Scissors.</h1></header>
         <div id="rules">
-          <h1>Rules</h1>
+          <h1 id="rulesmodal"></h1>
         </div>
       </nav>
       <div id="middle">
         <div id="playercontainer">
-          <div id="player"></div>
-          <div id="rpsbtns">
-            <button id="rock"></button>
-            <button id="paper"></button>
-            <button id="scissors"></button>
+         <img id="player" src="./modules/Images/rpsgifs/player/playeridle.gif" />
+          <div class="rpsbtns">
+            <button id="rock">ROCK</button>
+            <button id="paper">PAPER</button>
+            <button   id="scissors">SCISSORS</button>
           </div>
         </div>
 
         <div id="eventcontainer">
-          <img id="painting" src="./modules/Images/NatureWorld.png" alt="van gogh style painting of nature" />
+          <img id="painting" src="./modules/Images/NatureWorld.png" alt="van gogh style painting of nature">
+          <h4 id="eventtext">Choose Rock, Paper or Scissors!</h4>
+          <h4 id="resolve"></h4>
+          <img/>
+          
         </div>
         <div id="enemycontainer">
-          <div id="enemy"></div>
-          <div id="rpsenemychance"></div>
+          <img id="enemy" src="./modules/Images/rpsgifs/hunt/huntidle.gif" />
+          <div class="rpsbtns">
+            <h3 id="enemychoice">HIDDEN</h3>
+            
+          </div>
         </div>
       </div>
     </div>
